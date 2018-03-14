@@ -1,0 +1,36 @@
+void setup() {
+
+  size(700, 700);
+  noSmooth();
+}
+
+void draw() {
+
+  background(255);
+
+  fill(255, 0, 0);
+  ellipse(width/2-(width/3), height/2-(height/3), 15, 15);
+  ellipse(width/2, height/2-(height/3), 15, 15);
+  ellipse(width/2+(width/3), height/2-(height/3), 15, 15);
+  ellipse(width/2-(width/4), height/2, 15, 15);
+  ellipse(width/2, height/2-(height/6), 15, 15);
+  ellipse(width/2+(width/4), height/2, 15, 15);
+  ellipse(width/2-(width/3), height/2+(height/3), 15, 15);
+  ellipse(width/2, height/2+(height/6), 15, 15);
+  ellipse(width/2, height/2+(height/3), 15, 15);
+  ellipse(width/2+(width/3), height/2+(height/3), 15, 15);
+
+  line(width/2-(width/3), height/2-(height/3), mouseX, mouseY);
+  line(width/2, height/2-(height/3), width/2+(width/3), height/2-(height/3));
+  line(width/2+(width/3), height/2-(height/3), width/2+(width/3), height/2+(height/3));
+  line(width/2+(width/3), height/2+(height/3), width/2, height/2+(height/3));
+  line(width/2, height/2+(height/3), width/2, height/2+(height/6));
+  line(width/2, height/2+(height/6), width/2+(width/4), height/2);
+  line(width/2+(width/4), height/2, width/2, height/2-(height/6));
+  line(width/2, height/2-(height/6), width/2-(width/4), height/2);
+  line(width/2-(width/4), height/2, width/2, height/2+(height/6));
+  line(width/2, height/2+(height/3), width/2-(width/3), height/2+(height/3));
+  line(width/2-(width/3), height/2+(height/3), width/2-(width/3), height/2-(height/3));
+  line(width/2, height/2-(height/3), width/2, height/2-(height/6));
+  line(width/2, height/2-(height/6), width/2, height/2+(height/6));
+}
